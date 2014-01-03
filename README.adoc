@@ -1,0 +1,53 @@
+= Html5 Forms
+
+A project for modern HTML5 forms in CQ5 utilizing best practices, minimal markup, and fallbacks for older browsers.
+
+== Feature Roadmap
+
+* Minimal Viable Form
+** [ ] <form>
+** [ ] <input type=text|hidden> WITH <label>
+** [ ] <button type=submit>
+** [ ] edit mode: table of fields
+** [ ] preview mode: looks like a (possibly unstyled) form
+** [ ] embed non-input, ie headers, plain or rich text
+* Add recommended attributes: usability
+** [ ] tabindex, placeholder, autofocus, autocomplete, aria role, title, etc
+* Add Html5 input types
+** [ ] search, password, email, url, tel
+** [ ] number (spinner), range (slider)
+* Add field validation attributes
+** [ ] required, maxlength, pattern=regex, messages, ...
+** [ ] min/max/step for number/range
+** [ ] input masks
+* Add elements
+** [ ] select-option, radio, checkbox (with fieldset)
+** [ ] select-fieldgroup-option
+** [ ] output, progress
+** [ ] multi-val: create some handy enum/maps/enumsets, ie states
+** [ ] order: entry, by display, by value
+* CSS styling
+** [ ] options for 1-2 columns
+** [ ] validation errors
+** [ ] form submit success/failure
+* JS Fallbacks
+** [ ] required attribute
+** [ ] pattern attribute
+** [ ] other validations
+** [ ] validation messages
+* pre-population with XSS security
+** [ ] secure pre-pop
+* server-side validation
+** [ ] match client-side validations
+** [ ] forward if succeeds?
+* optional
+** [ ] form-level validations?
+** [ ] REST: put and other verbs?
+** [ ] input types: date/time combos, file, color
+** [ ] multi-step forms
+** [ ] analytics?
+
+== Non-functional requirements
+
+* "show my hands" - minimize magic/hidden functionality/code complication
+* document my steps
