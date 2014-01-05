@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="HTML5 Form"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <main
+                jcr:primaryType="cq:Panel"
+                title="Main">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <action
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="URI to send form data"
+                        fieldLabel="Action"
+                        name="./action"
+                        regex=""
+                        regexText="Invalid URI"
+                        validateOnBlur="{Boolean}true"
+                        xtype="textfield"/>
+                    <method
+                        jcr:primaryType="cq:Widget"
+                        blankText="POST"
+                        fieldDescription="POST / GET / ..."
+                        fieldLabel="Method"
+                        name="./method"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <_x0031_-POST
+                                jcr:primaryType="nt:unstructured"
+                                text="POST"
+                                value="post"/>
+                            <_x0032_-GET
+                                jcr:primaryType="nt:unstructured"
+                                text="GET (discouraged)"
+                                value="get"/>
+                        </options>
+                    </method>
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="distinguish from other forms on page"
+                        fieldLabel="Name"
+                        name="./name"
+                        xtype="textfield"/>
+                </items>
+            </main>
+            <advanced
+                jcr:primaryType="cq:Panel"
+                title="TBD">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <autocomplete
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="check to prevent auto-completion (ie passwords and non-words)"
+                        fieldLabel="Disable AutoComplete"
+                        name="./disableComplete"/>
+                    <novalidate
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="check to prevent client-side form validations"
+                        fieldLabel="Disable Validation"
+                        name="./disableValidate"/>
+                    <enctype
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="urlencode (default) / file / plain text"
+                        fieldLabel="Encoding Type"
+                        name="./enctype"/>
+                    <target
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="same window (default) / new window / or iFrame specific"
+                        fieldLabel="Target"
+                        name="./target"/>
+                </items>
+            </advanced>
+        </items>
+    </items>
+</jcr:root>

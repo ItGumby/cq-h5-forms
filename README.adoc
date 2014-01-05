@@ -5,7 +5,7 @@ A project for modern HTML5 forms in CQ5 utilizing best practices, minimal markup
 == Feature Roadmap
 
 * Minimal Viable Form
-** [ ] <form>
+** [X] <form>
 ** [ ] <input type=text|hidden> WITH <label>
 ** [ ] <button type=submit>
 ** [ ] edit mode: table of fields
