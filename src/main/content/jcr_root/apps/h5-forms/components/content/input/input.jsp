@@ -3,8 +3,7 @@
   HTML5 input field component.
 --%><%
 %><%@ include file="/apps/h5-forms/global-h5-forms.jsp" %>
-<%--<c:set var="id" value="<%= (currentNode==null) ? resource.getPath().replaceAll("/", "-") : currentNode.getUUID() %>" />--%>
-<c:set var="id" value="abc123" />
+<c:set var="id" value="${currentNode.identifier}" />
 <c:if test="${isEditMode}">
     <tr>
         <td>${properties.name}</td>

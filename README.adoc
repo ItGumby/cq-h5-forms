@@ -7,25 +7,28 @@ A project for modern HTML5 forms in CQ5 utilizing best practices, minimal markup
 * Minimal Viable Form
 ** [*] <form>
 ** [*] <input type=text|hidden> WITH <label>
-** [ ] <button type=submit>
 ** [ ] edit mode: table of fields
 ** [ ] preview mode: looks like a (possibly unstyled) form
-** [ ] embed non-input, ie headers, plain or rich text
-* Add recommended attributes: usability
-** [ ] tabindex, placeholder, autofocus, autocomplete, aria role, title, etc
 * Add Html5 input types
-** [ ] search, password, email, url, tel
-** [ ] number (spinner), range (slider)
+** [*] search, password, email, url, tel
+** [*] number (spinner), range (slider)
 * Add field validation attributes
 ** [ ] required, maxlength, pattern=regex, messages, ...
 ** [ ] min/max/step for number/range
 ** [ ] input masks
+* Add recommended attributes: usability
+** [ ] tabindex, placeholder, autofocus, autocomplete, aria role, title, etc
 * Add elements
+** [ ] allow non-input, ie headers/text/column-control in parsys
+** [ ] <button type=submit>
 ** [ ] select-option, radio, checkbox (with fieldset)
 ** [ ] select-fieldgroup-option
 ** [ ] output, progress
 ** [ ] multi-val: create some handy enum/maps/enumsets, ie states
 ** [ ] order: entry, by display, by value
+* Build/Package/Deploy
+** [ ] maven
+** [ ] gradle
 * CSS styling
 ** [ ] options for 1-2 columns
 ** [ ] validation errors
