@@ -2,12 +2,9 @@
 
 HTML5 form container.
 Semantic, accessible forms with validations.
+
 --%><%
-%><%@ include file="/libs/foundation/global.jsp"%><%
-%><%@ page session="false"
-    contentType="text/html; charset=utf-8"
-    import="com.day.cq.wcm.api.*, com.day.cq.wcm.api.components.*" %>
-<c:set var="isEditMode" value="<%= (WCMMode.fromRequest(request) == WCMMode.EDIT || WCMMode.fromRequest(request) == WCMMode.DESIGN) %>" />
+%><%@ include file="/apps/h5-forms/global-h5-forms.jsp"%>
 <form action="${properties.action}"
     method="${ (empty properties.method) ? 'POST' : properties.method }"
     <c:if test="${not empty properties.name}">name="${properties.name}"</c:if>
@@ -22,6 +19,8 @@ Semantic, accessible forms with validations.
       <thead>
         <tr>
             <td>name</td>
+            <td>type</td>
+            <td>label</td>
         </tr>
       </thead>
       <tbody>
@@ -42,6 +41,11 @@ Semantic, accessible forms with validations.
 .simpleForm dt, .simpleForm dd { display: inline-block; margin: 0; padding: 0; }
 .simpleForm dt { width: 20%; }
 .simpleForm dd { width: 78%; }
+
+.simpleForm label, .simpleForm input {
+    display: block;
+    width: 100%;
+}
 
 table{width:100%;border-collapse:collapse}
 table caption{font-size:larger;margin:1em auto;padding-top:2em}

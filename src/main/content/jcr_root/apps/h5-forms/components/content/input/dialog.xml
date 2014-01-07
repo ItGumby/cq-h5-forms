@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="HTML5 Form"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <main
+                jcr:primaryType="cq:Panel"
+                title="Main">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="submit name"
+                        fieldLabel="Name"
+                        name="./name"
+                        xtype="textfield"/>
+                    <type
+                        jcr:primaryType="cq:Widget"
+                        blankText="TEXT"
+                        fieldDescription="type of input text field"
+                        fieldLabel="Type"
+                        name="./type"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <_x0030_1-text
+                                jcr:primaryType="nt:unstructured"
+                                text="text (default)"
+                                value="text"/>
+                            <_x0030_2-hidden
+                                jcr:primaryType="nt:unstructured"
+                                text="Hidden"
+                                value="hidden"/>
+                            <_x0031_1-search
+                                jcr:primaryType="nt:unstructured"
+                                text="Search"
+                                value="search"/>
+                            <_x0031_2-tel
+                                jcr:primaryType="nt:unstructured"
+                                text="Telephone"
+                                value="tel"/>
+                            <_x0031_3-email
+                                jcr:primaryType="nt:unstructured"
+                                text="Email"
+                                value="email"/>
+                            <_x0031_4-url
+                                jcr:primaryType="nt:unstructured"
+                                text="URL"
+                                value="url"/>
+                            <_x0031_5-password
+                                jcr:primaryType="nt:unstructured"
+                                text="Password"
+                                value="password"/>
+                            <_x0032_1-submit
+                                jcr:primaryType="nt:unstructured"
+                                text="(button) Submit"
+                                value="submit"/>
+                            <_x0032_2-reset
+                                jcr:primaryType="nt:unstructured"
+                                text="(button) Reset/Cancel"
+                                value="reset"/>
+                            <_x0032_3-button
+                                jcr:primaryType="nt:unstructured"
+                                text="(button) Behavior-less Button"
+                                value="button"/>
+                            <_x0033_1-number
+                                jcr:primaryType="nt:unstructured"
+                                text="Number (spinner)"
+                                value="number"/>
+                            <_x0033_2-range
+                                jcr:primaryType="nt:unstructured"
+                                text="Range"
+                                value="range"/>
+                            <_x0034_1-date
+                                jcr:primaryType="nt:unstructured"
+                                text="Date (YYYYMMDD)"
+                                value="date"/>
+                            <_x0034_2-time
+                                jcr:primaryType="nt:unstructured"
+                                text="Time (HH:MM)"
+                                value="time"/>
+                            <_x0034_3-datetime
+                                jcr:primaryType="nt:unstructured"
+                                text="Date + UTC Time "
+                                value="datetime"/>
+                            <_x0034_4-month
+                                jcr:primaryType="nt:unstructured"
+                                text="Month: YYYYMM"
+                                value="month"/>
+                            <_x0034_5-week
+                                jcr:primaryType="nt:unstructured"
+                                text="Week: YYYY + week of year number"
+                                value="week"/>
+                            <_x0034_6-datetime-local
+                                jcr:primaryType="nt:unstructured"
+                                text="Date + Time (no time zone)"
+                                value="datetime-local"/>
+                            <_x0035_1-file
+                                jcr:primaryType="nt:unstructured"
+                                text="File"
+                                value="file"/>
+                            <_x0035_2-color
+                                jcr:primaryType="nt:unstructured"
+                                text="Color Selector (rare browser support)"
+                                value="color"/>
+                        </options>
+                    </type>
+                    <label
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="field label (required for accessibility)"
+                        fieldLabel="Label"
+                        name="./label"
+                        validateOnBlur="{Boolean}true"
+                        xtype="textfield"/>
+                </items>
+            </main>
+            <advanced
+                jcr:primaryType="cq:Panel"
+                title="TBD">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <autocomplete
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="check to prevent auto-completion (ie passwords and non-words)"
+                        fieldLabel="Disable AutoComplete"
+                        name="./disableComplete"/>
+                    <novalidate
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="check to prevent client-side form validations"
+                        fieldLabel="Disable Validation"
+                        name="./disableValidate"/>
+                    <enctype
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="urlencode (default) / file / plain text"
+                        fieldLabel="Encoding Type"
+                        name="./enctype"/>
+                    <target
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="same window (default) / new window / or iFrame specific"
+                        fieldLabel="Target"
+                        name="./target"/>
+                </items>
+            </advanced>
+        </items>
+    </items>
+</jcr:root>
